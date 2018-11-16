@@ -1,0 +1,42 @@
+h1 {
+    padding: 20px;
+}
+
+body {
+    background-image: url("../image/rottenTomato.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+h1 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+}
+
+p {
+    color: white;
+    font-family: 'Ruda', sans-serif;
+}
+
+.offset-md-3{
+    margin-left: 43%;
+}
+
+.jumbotron {
+    background: transparent;
+    /* background-image: url("../image/rottenTomato.jpg"); */
+}
+#ticket {
+    margin: 0 auto;
+}
+
+#poster {
+    width: 200px;
+
+}
+.noPadding{
+    padding: 0;
+}

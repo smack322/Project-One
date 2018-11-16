@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Critic Game</title>
+    <!-- Style links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">    
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Firebase Link -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+</head>
+
+<body>
+    <!-- Game Container -->
+    <div class="container">
+        <div class="pb-2 mt-5 mb-2">
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="jumbotron vertical-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="display-4 animated bounce" id="title">Welcome to Tomato Trivia! <span class="badge badge-secondary"
+                                id="score"></span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="fluff lead">See how you rank against fellow movie critics across the globe</p>
+                        <img id="poster" class="animated bounce">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center mb-5">
+                        <p class="fluff">Your score will be generated based upon how close you are to the movies rotten
+                            tomato score</p>
+                        <button class="btn btn-primary btn-lg mt-4" id="startButton" href="#" role="button">Start</button>
+                        <br><br>
+                        <div class="row">
+                            <div id="userInput" class="offset-md-3">
+                                <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="userTriviaGuess" placeholder="0 - 100">
+                                    <br><br>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-primary" type="submit" id="submitButton">Submit</button>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title animated bounce" id="exampleModalLabel">Leaderboard</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="leaderboardContainer"></div>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery and JS links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+
+
+</html>
